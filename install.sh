@@ -11,19 +11,19 @@ pip_install () {
 			apt-get install python3-venv
 		fi
 		#WARNING: Changing to --copies for colab users, not optimal way to do this
-		python3 -m venv --copies ./venv
+		python3.9 -m venv --copies ./venv
 	fi
 	commit_hash=$(git log --pretty=format:'%h' -n 1)
 	echo "You are using https://github.com/cloveranon/Clover-Edition/commit/${commit_hash}"
 	source "${BASE_DIR}/venv/bin/activate"
-	pip install --upgrade pip setuptools
-	pip --no-cache-dir install -r "${BASE_DIR}/requirements/requirements.txt"
+	python3.9 -m pip install --upgrade pip setuptools
+	python3.9 -m pip --no-cache-dir install -r "${BASE_DIR}/requirements/requirements.txt"
 
 	echo "Would you like to install Nvidia CUDA support (~4.5gb) or just use your CPU (~800mb, but much slower)?"
 	select yn in "Nvidia CUDA" "CPU only"; do
 		case $yn in
-			"Nvidia CUDA" ) pip install -r "${BASE_DIR}/requirements/cuda_requirements.txt"; break;;
-			"CPU only" ) pip install -r "${BASE_DIR}/requirements/cpu_requirements.txt"; break;;
+			"Nvidia CUDA" ) python3.9 -m pip install -r "${BASE_DIR}/requirements/cuda_requirements.txt"; break;;
+			"CPU only" ) python3.9 -m pip install -r "${BASE_DIR}/requirements/cpu_requirements.txt"; break;;
 		esac
 	done
 }
