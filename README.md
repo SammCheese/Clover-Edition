@@ -83,8 +83,7 @@ You can have multiple models installed, but you need at least one.
 | finetuneanon's horni - light novel | GPT-Neo | 2.7 billion | 5 GB | 8 GB | 8 GB | [[mega](https://mega.nz/file/rQcWCTZR#tCx3Ztf_PMe6OtfgI95KweFT5fFTcMm7Nx9Jly_0wpg)] [[gdrive](https://drive.google.com/file/d/1M1JY459RBIgLghtWDRDXlD4Z5DAjjMwg/view?usp=sharing)] [[torrent](https://tinyurl.com/pytorch-gptneo-horni)]  |
 | finetuneanon's horni | GPT-Neo | 2.7 billion | 5 GB | 8 GB | 8 GB | [[mega](https://mega.nz/file/6BNykLJb#B6gxK3TnCKBpeOF1DJMXwaLc_gcTcqMS0Lhzr1SeJmc)] [[gdrive](https://drive.google.com/file/d/1-Jj_hlyNCQxuSnK7FFBXREGnRSMI5MoF/view?usp=sharing)] [[torrent](https://tinyurl.com/pytorch-gptneo-horni)](same as above) |
 | EleutherAI | GPT-Neo | 2.7 billion | 10 GB | 12 GB | 8 GB | [[huggingface](https://huggingface.co/EleutherAI/gpt-neo-2.7B/tree/main)] * |
-| Original Clover Edition | GPT-2 | 1.56 billion | 6 GB | 12 GB | 5 GB | [[torrent](tinyurl.com/pytorch-gpt2-model)] |
-| Collection of 4 models | GPT-2 | 774 million | 3 GB ea | 8 GB | 4 GB | [[mega](https://mega.nz/folder/4e5kRCIB#v7q0ItVjhhGcIqfZOZy9yA)] |
+| Original Clover Edition | GPT-2 | 1.56 billion | 6 GB | 12 GB | 5 GB |  [[mega](https://mega.nz/file/27gzlIrD#QVXYdlox09H2qxV8DegjW3OQzQu1X6Tt8cHKDA1M_Rc)] [[torrent](tinyurl.com/pytorch-gpt2-model)] |
 
 \* For EleutherAI's GPT-Neo-2.7B, Download only `pytorch_model.bin` and make sure it's named that, put it into a new folder named `gpt-neo-2.7b` (see below for the structure), then copy `config.json`, `merges.txt`, and `vocab.json` from one of finetuneanon's models and put them in the same folder.
 
